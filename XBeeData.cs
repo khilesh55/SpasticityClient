@@ -251,6 +251,11 @@ namespace SpasticityClient
             }
         }
 
+        public void Calibrate ()
+        {
+
+        }
+
         // Stop reading
         public void Stop()
         {

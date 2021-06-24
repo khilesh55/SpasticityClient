@@ -11,7 +11,7 @@
             <RowDefinition Height="0.1*"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Text="Force" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <lvc:CartesianChart Grid.Row="1" AnimationsSpeed="0:0:0.5" DataTooltip="{x:Null}" Height="auto" Width="auto" Hoverable="False">
             <lvc:CartesianChart.Series>
                 <lvc:LineSeries Values="{Binding ForceValues}" 
@@ -21,8 +21,8 @@
                                 Stroke="LimeGreen"></lvc:LineSeries>
             </lvc:CartesianChart.Series>
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis MinValue="250" 
-                          MaxValue="350"></lvc:Axis>
+                <lvc:Axis MinValue="50000" 
+                          MaxValue="55000"></lvc:Axis>
             </lvc:CartesianChart.AxisY>
             <lvc:CartesianChart.AxisX>
                 <lvc:Axis MinValue="{Binding Min}" 

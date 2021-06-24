@@ -38,7 +38,7 @@ namespace SpasticityClient
                 {
                     searchNext = false;
                     var idx = leftHexData.IndexOf("7E", searchIdx);
-                    if (idx >= 0 && leftHexData.Count > idx + 2 && leftHexData[idx + 1] == "00" && leftHexData[idx + 2] == "5F")
+                    if (idx >= 0 && leftHexData.Count > idx + 2 && leftHexData[idx + 1] == "00" && leftHexData[idx + 2] == "0B")
                     {
                         var parsedList = leftHexData.GetRange(0, idx);
                         returnHex.Add(parsedList);
@@ -76,7 +76,7 @@ namespace SpasticityClient
                 if (hexFull[0] == "7E")
                 {
                     var length = int.Parse(hexFull[1] + hexFull[2], System.Globalization.NumberStyles.HexNumber);
-                    if (length != 104)
+                    if (length != 20)
                     {
                         isWrongStart = true;
                     }

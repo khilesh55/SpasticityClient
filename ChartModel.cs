@@ -176,7 +176,7 @@ namespace SpasticityClient
                 if (!IsRunning)
                 {
                     _xbeeData.IsCancelled = false;
-                    const int keepRecords = 80;
+                    const int keepRecords = 100;
                     var mainApp = (MainWindow)App.Current.MainWindow;
 
                     Action readFromXBee = () =>
@@ -268,7 +268,7 @@ namespace SpasticityClient
         public void SetAxisLimits(DateTime now)
         {
             Max = now.Ticks + TimeSpan.FromSeconds(0.3).Ticks; // lets force the axis to be 1 second ahead
-            Min = now.Ticks - TimeSpan.FromSeconds(1.5).Ticks; // and 8 seconds behind
+            Min = now.Ticks - TimeSpan.FromSeconds(2.5).Ticks; // and 8 seconds behind
         }
         #endregion
 

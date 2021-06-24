@@ -16,19 +16,10 @@
     <Window.DataContext>
         <local:MainWindowViewModel></local:MainWindowViewModel>
     </Window.DataContext>
-    
+
     <Window.Resources>
-        <DataTemplate DataType="{x:Type local:ChartModel}" x:Key="EMGChart">
-            <local:EMGChart></local:EMGChart>
-        </DataTemplate>
         <DataTemplate DataType="{x:Type local:ChartModel}" x:Key="ForceChart">
             <local:ForceChart></local:ForceChart>
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type local:ChartModel}" x:Key="AngleChart">
-            <local:AngleChart></local:AngleChart>
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type local:ChartModel}" x:Key="AngularVelocityChart">
-            <local:AngularVelocityChart></local:AngularVelocityChart>
         </DataTemplate>
     </Window.Resources>
     
@@ -48,10 +39,7 @@
             <ColumnDefinition Width="0.1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ContentControl Grid.Row="1" Grid.Column="1" Content="{Binding ChartModel}" ContentTemplate="{StaticResource EMGChart}"/>
-        <ContentControl Grid.Row="1" Grid.Column="2" Content="{Binding ChartModel}" ContentTemplate="{StaticResource ForceChart}"/>
-        <ContentControl Grid.Row="2" Grid.Column="1" Content="{Binding ChartModel}" ContentTemplate="{StaticResource AngleChart}"/>
-        <ContentControl Grid.Row="2" Grid.Column="2" Content="{Binding ChartModel}" ContentTemplate="{StaticResource AngularVelocityChart}"/>
+        <ContentControl Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Content="{Binding ChartModel}" ContentTemplate="{StaticResource ForceChart}"/>
         
         <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>

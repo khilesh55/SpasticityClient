@@ -149,9 +149,6 @@
       <DependentUpon>SaveInputDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="SessionData.cs" />
-    <Compile Include="EMGChart.xaml.cs">
-      <DependentUpon>EMGChart.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ForceChart.xaml.cs">
       <DependentUpon>ForceChart.xaml</DependentUpon>
     </Compile>
@@ -163,10 +160,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AngularVelocityChart.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EMGChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

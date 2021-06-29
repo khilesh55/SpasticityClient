@@ -73,7 +73,7 @@ namespace SpasticityClient
                         {
                             //Total transmitted data is [] byte long. 1 more byte should be checksum. prefixchar is the extra header due to API Mode
                             int prefixCharLength = 8;
-                            int byteArrayLength = 10;
+                            int byteArrayLength = 16;
                             int checkSumLength = 1;
                             int totalExpectedCharLength = prefixCharLength + byteArrayLength + checkSumLength;
                             
@@ -85,7 +85,7 @@ namespace SpasticityClient
                             {
                                 //Make sure it's 25 charactors long. It's same as the arduino receiver code for checking the length. This was previously compared to totalExpectedCharLength but looks like packetDatas - packetData only contains the data part anyway therefore compare to byteArrayLength
                                 //Also modify data defn to be packetData itself
-                                if (packetData.Count == (byteArrayLength+checkSumLength))
+                                if (packetData.Count == (byteArrayLength))
                                 {
                                     var data = packetData;
 
@@ -141,13 +141,6 @@ namespace SpasticityClient
             {
                 Stop();
             }
-        }
-
-        public float MovingAverage(int arrayLength, List<float> angleArray)
-        {
-            float movingSum = angleArray.Sum();
-            float movingAverage = movingSum / arrayLength;
-            return movingAverage;
         }
 
         // Stop reading

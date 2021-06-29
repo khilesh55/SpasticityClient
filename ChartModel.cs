@@ -50,10 +50,7 @@ namespace SpasticityClient
 
         public bool IsRunning { get; set; }
 
-        public ChartValues<MeasureModel> EMGValues { get; set; }
         public ChartValues<MeasureModel> ForceValues { get; set; }
-        public ChartValues<MeasureModel> AngleValues { get; set; }
-        public ChartValues<MeasureModel> AngularVelocityValues { get; set; }
 
         public List<SessionData> SessionDatas { get; set; }
 
@@ -143,10 +140,7 @@ namespace SpasticityClient
             Charting.For<MeasureModel>(mapper);
 
             //the values property will store our values array
-            EMGValues = new ChartValues<MeasureModel>();
             ForceValues = new ChartValues<MeasureModel>();
-            AngleValues = new ChartValues<MeasureModel>();
-            AngularVelocityValues = new ChartValues<MeasureModel>();
 
             SessionDatas = new List<SessionData>();
 
@@ -176,7 +170,7 @@ namespace SpasticityClient
                 if (!IsRunning)
                 {
                     _xbeeData.IsCancelled = false;
-                    const int keepRecords = 80;
+                    const int keepRecords = 120;
                     var mainApp = (MainWindow)App.Current.MainWindow;
 
                     Action readFromXBee = () =>
@@ -268,7 +262,7 @@ namespace SpasticityClient
         public void SetAxisLimits(DateTime now)
         {
             Max = now.Ticks + TimeSpan.FromSeconds(0.3).Ticks; // lets force the axis to be 1 second ahead
-            Min = now.Ticks - TimeSpan.FromSeconds(1.5).Ticks; // and 8 seconds behind
+            Min = now.Ticks - TimeSpan.FromSeconds(2.5).Ticks; // and 8 seconds behind
         }
         #endregion
 
@@ -299,10 +293,7 @@ namespace SpasticityClient
             
             _xbeeData.IsCancelled = true;
             _xbeeData.Stop();
-            EMGValues.Clear();
             ForceValues.Clear();
-            AngleValues.Clear();
-            AngularVelocityValues.Clear();
             IsRunning = false;
         }
         #endregion

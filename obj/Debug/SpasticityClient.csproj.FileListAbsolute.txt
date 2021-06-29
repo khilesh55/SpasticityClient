@@ -19,14 +19,8 @@ C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\Spasticit
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.csproj.CopyComplete
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.exe
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.pdb
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\AngleChart.g.cs
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\AngularVelocityChart.g.cs
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\EMGChart.g.cs
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\ForceChart.g.cs
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\AngleChart.baml
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\AngularVelocityChart.baml
-C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\EMGChart.baml
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\ForceChart.baml
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\bin\Debug\Microsoft.Xaml.Behaviors.dll
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\bin\Debug\Prism.dll
@@ -47,3 +41,7 @@ C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\bin\Debug\Syncfusio
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.csprojAssemblyReference.cache
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SaveInputDialog.g.cs
 C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SaveInputDialog.baml
+C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\bin\Debug\SpasticityClient.exe.manifest
+C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\bin\Debug\SpasticityClient.application
+C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.exe.manifest
+C:\Users\VR-7\source\repos\SpasticityClient\SpasticityClient\obj\Debug\SpasticityClient.application
